@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<header class="bg-black/20 backdrop-blur-sm border-b border-white/10 fixed w-full top-0 z-50">
+<header class="fixed top-0 left-0 w-full bg-black/20 backdrop-blur-sm
+               border-b border-white/10 z-50">
     <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-4 hover:opacity-80 transition">
@@ -13,9 +14,9 @@
                 </div>
             </a>
             <nav class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-white hover:text-blue-300 transition">Home</a>
-                <a href="ai-iot-project.html" class="text-white hover:text-blue-300 transition">AI Project</a>
-                <a href="marketing-project.html" class="text-white hover:text-blue-300 transition">Marketing Project</a>
+                <a href="index.html"                class="nav-link">Home</a>
+                <a href="ai-iot-project.html"       class="nav-link">AI Project</a>
+                <a href="marketing-project.html"    class="nav-link">Marketing Project</a>
             </nav>
         </div>
     </div>
@@ -38,6 +39,9 @@
       gsap.registerPlugin(ScrollTrigger);
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -978,6 +982,7 @@
     </style>
 </head>
 <body class="bg-gray-50">
+    <main class="pt-24"></main>
     <!-- Particles Background -->
     <div id="particles-js" class="fixed inset-0 z-0"></div>
 
@@ -4930,7 +4935,21 @@
     </div>
 
     <!-- Enhanced JavaScript with API Integration -->
-     <script>
+    <ul id="mobileMenu"
+        class="fixed inset-0 bg-gray-900/95 text-center pt-24
+            space-y-8 text-2xl font-semibold hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-iot-project.html">AI Project</a></li>
+        <li><a href="marketing-project.html">Marketing Project</a></li>
+    </ul>
+
+<script>
+const btn   = document.getElementById('menuBtn');
+const menu  = document.getElementById('mobileMenu');
+btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+</script>
+
+<script>
 // Debug script to check static file paths
 console.log('=== STATIC FILE DEBUG ===');
 console.log('ECAM Logo:', "./assets/images/logos/ECAM_logo.jpg') }}");

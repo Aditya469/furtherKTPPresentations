@@ -13,9 +13,9 @@
                 </div>
             </a>
             <nav class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-white hover:text-blue-300 transition">Home</a>
-                <a href="ai-iot-project.html" class="text-white hover:text-blue-300 transition">AI Project</a>
-                <a href="marketing-project.html" class="text-white hover:text-blue-300 transition">Marketing Project</a>
+                <a href="index.html"                class="nav-link">Home</a>
+                <a href="ai-iot-project.html"       class="nav-link">AI Project</a>
+                <a href="marketing-project.html"    class="nav-link">Marketing Project</a>
             </nav>
         </div>
     </div>
@@ -582,8 +582,8 @@
                     <a href="#marketing-plan" class="hover:text-blue-200 transition-all duration-300">Marketing Plan</a>
                     <a href="#timeline" class="hover:text-blue-200 transition-all duration-300">Timeline</a>
                     <a href="#investment-analysis" class="hover:text-blue-200 transition-all duration-300">Investment</a>
-                    <a href="#roi-calculator-section" class="hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
                     <a href="#success-stories" class="hover:text-blue-200 transition-all duration-300">Success Stories</a>
+                    <a href="#roi-calculator-section" class="hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <button onclick="toggleApiConfig()" class="text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">
@@ -3276,6 +3276,21 @@
             <p class="text-xs">Adjust the sliders and inputs to explore different scenarios. The calculator uses real data from the KTP proposal and industry benchmarks to provide accurate projections.</p>
         </div>
     </div>
+
+    <!-- Enhanced JavaScript with API Integration -->
+    <ul id="mobileMenu"
+        class="fixed inset-0 bg-gray-900/95 text-center pt-24
+            space-y-8 text-2xl font-semibold hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-iot-project.html">AI Project</a></li>
+        <li><a href="marketing-project.html">Marketing Project</a></li>
+    </ul>
+
+<script>
+const btn   = document.getElementById('menuBtn');
+const menu  = document.getElementById('mobileMenu');
+btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+</script>
 
     <!-- JavaScript -->
     <script>
