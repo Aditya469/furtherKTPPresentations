@@ -1,0 +1,18 @@
+# GitHub Pages configuration
+title: "ECAM Engineering KTP Demo"
+description: "Interactive demonstrations of Knowledge Transfer Partnership projects"
+url: "https://Aditya469.github.io"
+baseurl: "/ecam-ktp-demo"
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
