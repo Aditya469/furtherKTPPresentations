@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<header class="fixed top-0 left-0 w-full bg-black/20 backdrop-blur-sm
-               border-b border-white/10 z-50">
-    <div class="container mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="flex items-center space-x-4 hover:opacity-80 transition">
-                <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
-                    <span class="text-lg font-bold">E</span>
-                </div>
-                <div>
-                    <h1 class="text-lg font-bold text-white">ECAM Engineering</h1>
-                    <p class="text-blue-200 text-xs">KTP Demo</p>
-                </div>
-            </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="index.html"                class="nav-link">Home</a>
-                <a href="ai-iot-project.html"       class="nav-link">AI Project</a>
-                <a href="marketing-project.html"    class="nav-link">Marketing Project</a>
-            </nav>
-        </div>
-    </div>
-</header>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -710,7 +689,11 @@
         }
 
         .definition-list {
-        space-y: 20px;
+        margin-bottom: 20px;
+        }
+        
+        .definition-list > * + * {
+        margin-top: 20px;
         }
 
         .definition-item {
@@ -987,10 +970,11 @@
     <div id="particles-js" class="fixed inset-0 z-0"></div>
 
     <!-- Enhanced Navigation -->
-    <header class="hero-gradient text-white fixed top-0 w-full z-50 shadow-xl">
-        <nav class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
+<header class="hero-gradient text-white fixed top-0 w-full z-50 shadow-xl">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="flex items-center space-x-4 hover:opacity-80 transition">
                     <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
                         <span class="text-2xl font-bold text-blue-700">E</span>
                     </div>
@@ -998,28 +982,34 @@
                         <h1 class="text-2xl font-bold">ECAM Engineering</h1>
                         <p class="text-sm text-blue-200">AI-Powered Manufacturing Solutions</p>
                     </div>
-                </div>
-                <div class="hidden lg:flex space-x-8">
-                    <!-- Home Button -->
-                    /* <a href="{{ url_for('main.presentation_page') }}" class="nav__link home-btn"> */
-                    /* <i class="fas fa-home"></i> Home</a> */
-                    <a href="#hero" class="nav-link hover:text-blue-200 transition-all duration-300">Overview</a>
-                    <a href="#ai-power" class="nav-link hover:text-blue-200 transition-all duration-300">AI Platform</a>
-                    <a href="#capabilities" class="nav-link hover:text-blue-200 transition-all duration-300">Capabilities</a>
-                    <a href="#financial" class="nav-link hover:text-blue-200 transition-all duration-300">Financial Impact</a>
-                    <a href="#customer-success" class="nav-link hover:text-blue-200 transition-all duration-300">Success Stories</a>
-                    <a href="#implementation" class="nav-link hover:text-blue-200 transition-all duration-300">Implementation</a>
-                    <a href="#roi-calculator-section" class="nav-link hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
-
-                </div>
-                <div class="flex items-center space-x-4">
-                    <button onclick="toggleApiConfig()" class="text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">
-                        🔧 AI Config
-                    </button>
-                </div>
+                </a>
             </div>
-        </nav>
-    </header>
+            <div class="hidden lg:flex space-x-8">
+                <!-- Presentation Home Button -->
+                <a href="index.html" class="nav__link home-btn flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-white/10 transition">
+                    <i class="fas fa-home"></i>
+                    <span>Presentation Home</span>
+                </a>
+                <a href="#hero" class="nav-link hover:text-blue-200 transition-all duration-300">Overview</a>
+                <a href="#ai-power" class="nav-link hover:text-blue-200 transition-all duration-300">AI Platform</a>
+                <a href="#capabilities" class="nav-link hover:text-blue-200 transition-all duration-300">Capabilities</a>
+                <a href="#financial" class="nav-link hover:text-blue-200 transition-all duration-300">Financial Impact</a>
+                <a href="#customer-success" class="nav-link hover:text-blue-200 transition-all duration-300">Success Stories</a>
+                <a href="#implementation" class="nav-link hover:text-blue-200 transition-all duration-300">Implementation</a>
+                <a href="#roi-calculator-section" class="nav-link hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleApiConfig()" class="text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                    🔧 AI Config
+                </button>
+                <!-- Mobile Menu Button (Optional, but good for responsiveness) -->
+                <button id="menuBtn" class="lg:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <main class="relative z-10">
         <!-- Professional Hero Section -->

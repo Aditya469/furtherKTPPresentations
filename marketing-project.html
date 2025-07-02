@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<header class="bg-black/20 backdrop-blur-sm border-b border-white/10 fixed w-full top-0 z-50">
-    <div class="container mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="flex items-center space-x-4 hover:opacity-80 transition">
-                <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center">
-                    <span class="text-lg font-bold">E</span>
-                </div>
-                <div>
-                    <h1 class="text-lg font-bold text-white">ECAM Engineering</h1>
-                    <p class="text-blue-200 text-xs">KTP Demo</p>
-                </div>
-            </a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="index.html"                class="nav-link">Home</a>
-                <a href="ai-iot-project.html"       class="nav-link">AI Project</a>
-                <a href="marketing-project.html"    class="nav-link">Marketing Project</a>
-            </nav>
-        </div>
-    </div>
-</header>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -556,34 +536,34 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
+    <!-- Enhanced Navigation -->
     <header class="hero-gradient text-white fixed top-0 w-full z-50 shadow-xl">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                        <span class="text-2xl font-bold text-blue-800">E</span>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-bold">ECAM Engineering Limited</h1>
-                        <p class="text-sm text-blue-200">Marketing & Business Innovation Management KTP Proposal</p>
-                    </div>
+                    <a href="index.html" class="flex items-center space-x-4 hover:opacity-80 transition">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
+                            <span class="text-2xl font-bold text-blue-700">E</span>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-bold">ECAM Engineering</h1>
+                            <p class="text-sm text-blue-200">AI-Powered Manufacturing Solutions</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="hidden lg:flex space-x-8">
-                    <!-- Updated Home button -->
-                    <!-- <a href="{{ url_for('main.presentation_page') }}" class="nav__link">
-                        <i class="fas fa-home"></i> Home
-                    </a> -->
-                    
-                    <!-- Existing navigation links -->
-                    <a href="#hero" class="hover:text-blue-200 transition-all duration-300">Overview</a>
-                    <a href="#objectives" class="hover:text-blue-200 transition-all duration-300">Objectives</a>
-                    <a href="#strategy" class="hover:text-blue-200 transition-all duration-300">Strategy</a>
-                    <a href="#marketing-plan" class="hover:text-blue-200 transition-all duration-300">Marketing Plan</a>
-                    <a href="#timeline" class="hover:text-blue-200 transition-all duration-300">Timeline</a>
-                    <a href="#investment-analysis" class="hover:text-blue-200 transition-all duration-300">Investment</a>
-                    <a href="#success-stories" class="hover:text-blue-200 transition-all duration-300">Success Stories</a>
-                    <a href="#roi-calculator-section" class="hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
+                    <!-- Presentation Home Button -->
+                    <a href="index.html" class="nav__link home-btn flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-white/10 transition">
+                        <i class="fas fa-home"></i>
+                        <span>Presentation Home</span>
+                    </a>
+                    <a href="#hero" class="nav-link hover:text-blue-200 transition-all duration-300">Overview</a>
+                    <a href="#ai-power" class="nav-link hover:text-blue-200 transition-all duration-300">AI Platform</a>
+                    <a href="#capabilities" class="nav-link hover:text-blue-200 transition-all duration-300">Capabilities</a>
+                    <a href="#financial" class="nav-link hover:text-blue-200 transition-all duration-300">Financial Impact</a>
+                    <a href="#customer-success" class="nav-link hover:text-blue-200 transition-all duration-300">Success Stories</a>
+                    <a href="#implementation" class="nav-link hover:text-blue-200 transition-all duration-300">Implementation</a>
+                    <a href="#roi-calculator-section" class="nav-link hover:text-blue-200 transition-all duration-300">ROI Calculator</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <button onclick="toggleApiConfig()" class="text-sm bg-white/20 px-4 py-2 rounded-lg hover:bg-white/30 transition">
@@ -944,7 +924,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Target Sector Distribution</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/target_sector.png">
+                            <img src="./assets/images/target_sector.png"
                                 alt="Target Sector Distribution - Automotive 35%, Aerospace 30%, Rail 25%, Defense 10%"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -983,7 +963,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Marketing Channel Effectiveness</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/marketing_channel_effectiveness.png">
+                            <img src="./assets/images/marketing_channel_effectiveness.png"
                                 alt="Marketing Channel Effectiveness - LinkedIn 67%, Website 45%, Referrals, Trade Shows, Email"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1016,7 +996,7 @@
                     <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Competitive Position Analysis</h3>
                     <div class="grid lg:grid-cols-2 gap-8">
                         <div class="chart-image-container">
-                            <img src="./assets/images/competitive_position_analysis.png">
+                            <img src="./assets/images/competitive_position_analysis.png"
                                 alt="Competitive Position Analysis Radar - ECAM Current vs Target vs Industry Average"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1224,7 +1204,7 @@
                 <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Competitive Position Analysis</h3>
                 <div class="grid lg:grid-cols-2 gap-8">
                     <div class="chart-image-container">
-                        <img src="./assets/images/market_penetration_timeline.png">
+                        <img src="./assets/images/market_penetration_timeline.png"
                             alt="Market Penetration Strategy Timeline - 24 Month Sector Entry Plan with Certification Milestones"
                             class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                             loading="lazy"
@@ -1288,7 +1268,7 @@
                 <div class="professional-card p-8 mb-12">
                     <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Cost-Benefit Analysis Over Time</h3>
                     <div class="chart-image-container">
-                        <img src="./assets/images/cost_benefit_analysis.png">
+                        <img src="./assets/images/cost_benefit_analysis.png"
                             alt="Cost-Benefit Analysis Over Time - 36 Month Financial Projection"
                             class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                             loading="lazy"
@@ -1310,7 +1290,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Enhanced Investment Allocation</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/enhanced_investment.png">
+                            <img src="./assets/images/enhanced_investment.png"
                                 alt="Enhanced Investment Allocation - Industry Certifications £100k, Marketing £79k, Operations £77k"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1346,7 +1326,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">ROI Development Timeline</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/ROI_development_timeline.png">
+                            <img src="./assets/images/ROI_development_timeline.png"
                                 alt="ROI Development Timeline - Progressive growth from 0% to 763% over 24 months"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1515,7 +1495,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-blue-800 mb-6">Enhanced Investment Allocation</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/mp_revenue_growth_projection.png">
+                            <img src="./assets/images/mp_revenue_growth_projection.png"
                                 alt="Revenue Growth Projection - Strategic growth from £3.7M to £6.0M+ over 3 years"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1559,7 +1539,7 @@
                     <div class="professional-card p-8">
                         <h3 class="text-2xl font-bold text-green-800 mb-6">ROI Development Timeline</h3>
                         <div class="chart-image-container">
-                            <img src="./assets/images/ROI_Expectations.png">
+                            <img src="./assets/images/ROI_Expectations.png"
                                 alt="ROI Development Timeline - Progressive growth from 0% to 763% over 24 months"
                                 class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                 loading="lazy"
@@ -1673,7 +1653,7 @@
                 <div class="professional-card p-8 mb-12">
                     <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Complete Project Timeline & Dependencies</h3>
                     <div class="chart-image-container">
-                        <img src="./assets/images/marketing_gantt_chart.png">
+                        <img src="./assets/images/marketing_gantt_chart.png"
                             alt="ECAM Engineering Marketing & Business Innovation KTP Project Gantt Chart - 24 Month Timeline March 2026 to March 2028"
                             class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                             loading="lazy"
@@ -2680,7 +2660,7 @@
                     <!-- ECAM Engineering -->
                     <div class="professional-card p-8 text-center hover:shadow-xl transition-all duration-300">
                         <div class="mb-6">
-                            <img src="./assets/images/logos/ECAM_logo.jpg"> 
+                            <img src="./assets/images/logos/ECAM_logo.jpg"
                                  alt="ECAM Engineering Limited Logo" 
                                  class="w-48 h-32 object-contain mx-auto bg-white rounded-lg shadow-md"
                                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -2703,7 +2683,7 @@
                     <!-- Birmingham City University -->
                     <div class="professional-card p-8 text-center hover:shadow-xl transition-all duration-300">
                         <div class="mb-6">
-                            <img src="./assets/images/logos/BCU_logo.jpg">
+                            <img src="./assets/images/logos/BCU_logo.jpg"
                                  alt="Birmingham City University Logo" 
                                  class="w-48 h-32 object-contain mx-auto bg-white rounded-lg shadow-md"
                                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -2726,7 +2706,7 @@
                     <!-- Innovate UK -->
                     <div class="professional-card p-8 text-center hover:shadow-xl transition-all duration-300">
                         <div class="mb-6">
-                            <img src="./assets/images/logos/Innovate_logo.png">
+                            <img src="./assets/images/logos/Innovate_logo.png"
                                  alt="Innovate UK Logo" 
                                  class="w-48 h-32 object-contain mx-auto bg-white rounded-lg shadow-md"
                                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -2944,7 +2924,7 @@
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Funding Distribution</h3>
                         <div class="chart-container">
                             <div class="chart-image-container">
-                                <img src="./assets/images/ktp_funding_distribution.png">
+                                <img src="./assets/images/ktp_funding_distribution.png"
                                     alt="KTP Funding Distribution - ECAM 33% vs Innovate UK 67% of £167,000 total funding"
                                     class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                     loading="lazy"
@@ -2977,7 +2957,7 @@
                         <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">Cost Category Analysis</h3>
                         <div class="chart-container">
                             <div class="chart-image-container">
-                                <img src="./assets/images/cost_category_analysis.png">
+                                <img src="./assets/images/cost_category_analysis.png"
                                     alt="Cost Category Analysis - Associate Employment 65.3%, Associate Support 32.3%, Personal Development 2.4%"
                                     class="w-full h-auto rounded-lg shadow-md transition-opacity duration-300"
                                     loading="lazy"
@@ -3276,21 +3256,6 @@
             <p class="text-xs">Adjust the sliders and inputs to explore different scenarios. The calculator uses real data from the KTP proposal and industry benchmarks to provide accurate projections.</p>
         </div>
     </div>
-
-    <!-- Enhanced JavaScript with API Integration -->
-    <ul id="mobileMenu"
-        class="fixed inset-0 bg-gray-900/95 text-center pt-24
-            space-y-8 text-2xl font-semibold hidden">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ai-iot-project.html">AI Project</a></li>
-        <li><a href="marketing-project.html">Marketing Project</a></li>
-    </ul>
-
-<script>
-const btn   = document.getElementById('menuBtn');
-const menu  = document.getElementById('mobileMenu');
-btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
-</script>
 
     <!-- JavaScript -->
     <script>
@@ -4791,6 +4756,3 @@ function generateRiskMitigation(riskType) {
 
 </body>
 </html>
-
-
-
