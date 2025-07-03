@@ -4579,12 +4579,11 @@
             observer.observe(card);
         });
 
-        // API Configuration with pre-configured keys
-        const API_KEYS = {
-            gemini: 'AIzaSyBvX6QUHyyIpysLfhKnf7ntO_dEYbXNJrQ',
-            perplexity: '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',
-            chatgpt: '',
-            copilot: ''
+        const AI_CONFIG = {
+        apiKey: "AIzaSyBvX6QUHyyIpysLfhKnf7ntO_dEYbXNJrQ", // Add your Gemini API key here
+        apiUrl: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        maxRetries: 3,
+        timeout: 30000
     };
     
     // Generic AI API call function with enhanced error handling
